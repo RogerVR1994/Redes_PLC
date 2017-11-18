@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Responsive admin dashboard and web application ui kit. ">
+    <meta name="keywords" content="blank, starter">
+
+    <title>Leer I/O</title>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,300i" rel="stylesheet">
+
+    <!-- Styles -->
+    <link href="assets/css/core.min.css" rel="stylesheet">
+    <link href="assets/css/app.css" rel="stylesheet">
+    <link href="assets/css/style.min.css" rel="stylesheet">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="assets/img/tec.png">
+    <link rel="icon" href="assets/img/teclogo.png">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
+  </head>
+
+  <body class="pace-done sidebar-folded">
+
+    <!-- Preloader -->
+    <div class="preloader">
+      <div class="spinner-dots">
+        <span class="dot1"></span>
+        <span class="dot2"></span>
+        <span class="dot3"></span>
+      </div>
+    </div>
+
+
+    <!-- Sidebar -->
+    <aside class="sidebar sidebar-icons-left sidebar-light sidebar-expand-lg">
+      <header class="sidebar-header" style="background-color: #ffffff;color:#ffffff">
+        <a class="logo-icon" href="#"><img src="assets/img/teclogo.png" alt="logo icon" style="overflow: hidden"; height="40px" width="40px"></a>
+        <span><h1>&nbsp;Siemens</h1></span>
+        <span class="sidebar-toggle-fold">::before</span>
+      </header>
+
+      <nav class="sidebar-navigation">
+        <li class="menu-category">Navegación</li>
+
+        <ul class="menu">
+          <li class="menu-item">
+            <a class="menu-link" href="index.html">
+              <span class="icon fa fa-home"></span>
+              <span class="title">Inicio</span>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a class="menu-link" href="#">
+              <span class="icon fa fa-edit"></span>
+              <span class="title">Activar Variables</span>
+              <span class="arrow"></span>
+            </a>
+
+            <ul class="menu-submenu">
+              <li class="menu-item">
+                <a class="menu-link" href="escribir_digitales.html">
+                  <span class="dot"></span>
+                  <span class="title">Digitales</span>
+                </a>
+              </li>
+
+              <li class="menu-item">
+                <a class="menu-link" href="escribir_analogas.html">
+                  <span class="dot"></span>
+                  <span class="title">Análogas</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="menu-item active">
+            <a class="menu-link" href="#">
+              <span class="icon fa fa-dashboard"></span>
+              <span class="title">Leer Variables</span>
+              
+            </a>
+
+            
+          </li>
+
+          <li class="menu-item">
+            <a class="menu-link" href="login.html">
+              <span class="icon fa fa-sign-out"></span>
+              <span class="title">Salir</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+    </aside>
+    <!-- END Sidebar -->
+
+ 
+
+    <!-- Topbar -->
+    <header class="topbar topbar-inverse bg-info">
+      <div class="topbar-left">
+        <span class="topbar-btn sidebar-toggler"><i>&#9776;</i></span>
+  <span class="sidebar-toggler"><img src="assets/img/logoTop.png" alt="logoTop"></span>
+  &nbsp;&nbsp;&nbsp;
+      </div>
+
+      <div class="topbar-right">
+        <ul class="topbar-btns">
+
+         <h2 style="color: white">Proyecto de Redes Industriales 2017</h2>
+
+        </ul>
+	
+
+      </div>
+    </header>
+    <!-- END Topbar -->
+  
+    <main class="main-container">
+      <header class="header" style="margin-bottom: 0px">
+        <div class="header-bar">
+          <h2>Leer Entradas I/O</h2>
+        </div>
+      </header>
+
+      <div class="main-content">
+        <div class="card">
+          <div class="card-body">
+            <table class="table table-responsive col-md-12" data-provide="datatables" id="IO">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Alias</th>
+                  <th>Valor en Memoria</th>
+                  <th>Tipo</th>
+                  <th>Valor</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>A1</td>
+                  <td>I4.0</td>
+                  <td>Boolean</td>
+                  <td>
+                    <h4>1</h4>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>A2</td>
+                  <td>I4.1</td>
+                  <td>Boolean</td>
+                  <td>
+                    <h4>0</h4>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>A3</td>
+                  <td>I4.2</td>
+                  <td>Boolean</td>
+                  <td>
+                    <h4>0</h4>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">4</th>
+                  <td>A4</td>
+                  <td>I4.3</td>
+                  <td>Boolean</td>
+                  <td>
+                    <h4>1</h4>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">5</th>
+                  <td>Boton_Marcha</td>
+                  <td>I4.4</td>
+                  <td>Boolean</td>
+                  <td>
+                    <h4>1</h4>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">6</th>
+                  <td>Boton_Paro</td>
+                  <td>I4.5</td>
+                  <td>Boolean</td>
+                  <td>
+                    <h4>0</h4>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">7</th>
+                  <td>Jog</td>
+                  <td>I4.6</td>
+                  <td>Boolean</td>
+                  <td>
+                    <h4>0</h4>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">8</th>
+                  <td>Cambio</td>
+                  <td>I4.7</td>
+                  <td>Boolean</td>
+                  <td>
+                    <h4>1</h4>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">9</th>
+                  <td>Presion</td>
+                  <td>I268</td>
+                  <td>Análoga</td>
+                  <td>
+                    <h4 style="float: left;">4</h4>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <h4 style="float: right;">Bars</h4>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">10</th>
+                  <td>Velocidad</td>
+                  <td>I270</td>
+                  <td>Análoga</td>
+                  <td>
+                    <h4 style="float: left;">25</h4>
+                    &nbsp;&nbsp;
+                    <h4 style="float: right;">RPM</h4>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </main>
+
+   
+
+
+      <!-- Footer -->
+      <footer class="site-footer">
+        <div class="row">
+          <div class="col-md-6">
+            <p class="text-center text-md-left">Copyright © 2017 <a href="https://github.com/RogerVR1994/Redesqq">Github</a>. Todos los derechos reservados.</p>
+          </div>
+
+          <div class="col-md-6">
+            <ul class="nav nav-primary nav-dotted nav-dot-separated justify-content-center justify-content-md-end">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Condiciones Generales de uso</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Aviso de privacidad</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Imprint</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+      <!-- END Footer -->
+
+    </main>
+    <!-- END Main container -->
+
+
+
+    <!-- Global quickview -->
+    <div id="qv-global" class="quickview" data-url="assets/data/quickview-global.html">
+      <div class="spinner-linear">
+        <div class="line"></div>
+      </div>
+    </div>
+    <!-- END Global quickview -->
+
+    <!-- Scripts -->
+    <script src="assets/js/core.min.js"></script>
+    <script src="assets/js/app.min.js"></script>
+    <script src="assets/js/script.min.js"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function() {
+      });
+    </script>
+
+
+  </body>
+</html>
